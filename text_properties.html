@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Properties</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="text_properties.html">Text Properties</a></li>
+                <li><a href="color_properties.html">Color Properties</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Text Properties</h2>
+        <p>This page shows you the different ways you can style your texts!</p>
+        <div class="property-icons">
+            <a href="#" class="property-icon" onclick="openPopup('text-color')"><img src="images/text_color.png" alt="Text Color"></a>
+            <a href="#" class="property-icon" onclick="openPopup('text-decoration-popup')"><img src="images/text_deco.png" alt="Text Decoration"></a>
+            <a href="#" class="property-icon" onclick="openPopup('text-alignment-popup')"><img src="images/text_align.png" alt="Text Alignment"></a>
+            <a href="#" class="property-icon" onclick="openPopup('text-transformation-popup')"><img src="images/text_transform.png" alt="Text Transformation"></a>
+        </div>
+    </div>
+
+    <!-- Pop-up pages -->
+    <div id="text-color" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Text Color</h2>
+            <p>Text color property is used to define the color of the text content.</p>
+            <p>Syntax: <code>color: value;</code> <code>color: red;</code></p>
+            <p>Example: This text is <span style="color: red;">color red</span>!</p>
+        </div>
+    </div>
+
+    <div id="text-decoration-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Text Decoration</h2>
+            <p>Text decoration property is used to add decorations to text, such as underline, overline, line-through, or blink.</p>
+            <p>Syntax: <code>text-decoration: value;</code> <code>text-decoration: underline;</code></p>
+            <p>Example: This is <span style="text-decoration: underline;">underlined text</span>.</p>
+            <p>         This is <span style="text-decoration: underline dotted;">dotted underlined text</span>.</p>
+            <p>         This is <span style="text-decoration: underline dotted red;">red dotted underlined text</span>.</p>
+            <p>         This is <span style="text-decoration: overline;">overlined text</span>.</p>
+        </div>
+    </div>   
+    
+    <div id="text-alignment-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Text Alignment</h2>
+            <p>Text alignment property is used to specify the horizontal alignment of text content within its container.</p>
+            <p>Syntax: <code>text-align: value;</code> <code>text-align: center;</code></p>
+            <p>Example: <div style="text-align: center;">This text is centered</div></p>
+            <p><div style="text-align: right;">This text is at the right</div></p>
+            <p><div style="text-align: left;">This text is at the left</div></p>
+        </div>
+    </div>
+
+    <div id="text-transformation-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Text Transformation</h2>
+            <p>Text transformation property is used to control the capitalization of text, such as making it uppercase, lowercase, or capitalized.</p>
+            <p>Syntax: <code>text-transform: value;</code> <code>text-transform: uppercase;</code></p>
+            <p>Example: <span style="text-transform: uppercase;">i am an uppercase text</span></p>
+            <p style="text-transform: lowercase;"> BUT THIS IS IN LOWERCASES</p>
+            <p style="text-transform: capitalize;"> this one's on capitalized style</p>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

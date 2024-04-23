@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Properties</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="text_properties.html">Text Properties</a></li>
+                <li><a href="color_properties.html">Color Properties</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Color Properties</h2>
+        <p>This page shows you the different ways you can define colors!</p>
+        <div class="property-icons">
+            <a href="#" class="property-icon" onclick="openPopup('color-values-popup')"><img src="images/color_values.png" alt="Color Values"></a>
+            <a href="#" class="property-icon" onclick="openPopup('color-opacity-popup')"><img src="images/color_opacity.png" alt="Opacity"></a>
+        </div>
+    </div>
+
+    <!-- Pop-up pages -->
+    <div id="color-values-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Color Values</h2>
+            <p>Color values in CSS can be specified using various formats, including hexadecimal (HEX), RGB, RGBA, HSL, HSLA, color names, or keyword values.</p>
+            <p>Syntax: <code>color: value;</code> <code>color: #FF0000;</code></p>
+            <p>Examples:</p>
+            <ul>
+                <li>HEX: <span style="color: #FF0000;">#FF0000</span></li>
+                <li>RGB: <span style="color: rgb(255, 0, 0);">rgb(255, 0, 0)</span></li>
+                <li>RGBA: <span style="color: rgba(255, 0, 0, 0.5);">rgba(255, 0, 0, 0.5)</span></li>
+                <li>HSL: <span style="color: hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</span></li>
+                <li>HSLA: <span style="color: hsla(0, 100%, 50%, 0.5);">hsla(0, 100%, 50%, 0.5)</span></li>
+                <li>Color Name: <span style="color: red;">red</span></li>
+                <li>Keyword Value: <span style="color: inherit;">inherit</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="color-opacity-popup" class="popup" style="opacity: 0.7;">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Color Opacity</h2>
+            <p>Description: Opacity property controls the transparency of an element, allowing you to see through it to varying degrees.</p>
+            <p>Syntax: <code>opacity: value;</code> (value ranges from 0 to 1)</p>
+            <p>Example: This pop-up has an opacity of 0.7.</p>
+        </div>
+    </div>    
+    
+</body>
+</html>
